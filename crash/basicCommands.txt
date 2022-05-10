@@ -1,0 +1,8 @@
+set key value
+get key
+del key
+keys [pattern] (ex.: * - list all of keys)
+exists key (check if key exists (1) or not (0))
+flushall (delete all keys)
+ttl key (show expire time, -1 no expire time settled, -2 key does not exist)
+setex key time value
