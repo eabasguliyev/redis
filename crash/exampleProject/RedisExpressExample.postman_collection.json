@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "8e80835e-e2e8-4f49-8965-ce94c78e7d63",
+		"name": "RedisExpressExample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetPhotos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/photos?albumId=5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"photos"
+					],
+					"query": [
+						{
+							"key": "albumId",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPhotoById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/photos/12",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"photos",
+						"12"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
