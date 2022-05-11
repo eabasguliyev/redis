@@ -1,5 +1,5 @@
 Basic Commands
---------------------
+-------------------
 set key value
 get key
 del key
@@ -19,3 +19,15 @@ rpop list_name - remove from end (right) of list
 lrange list_name start stop (max stop must be last index of list)
 if you want to print all of list items:
 lrange list_name 0 -1
+-------------------
+Sets - is unique list or array
+sadd key values (seperated by space)
+smembers key
+srem key values (seperated by space)
+-------------------
+Hashes is nested key value pair structure
+hset key field value
+hget key field
+hgetall key
+hdel key field
+hexists key field
