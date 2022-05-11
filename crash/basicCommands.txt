@@ -1,3 +1,5 @@
+Basic Commands
+--------------------
 set key value
 get key
 del key
@@ -5,4 +7,15 @@ keys [pattern] (ex.: * - list all of keys)
 exists key (check if key exists (1) or not (0))
 flushall (delete all keys)
 ttl key (show expire time, -1 no expire time settled, -2 key does not exist)
-setex key time value
+expire key time (with seconds)
+setex key time (with seconds) value
+
+Lists
+-------------------
+lpush list_name values (seperated by space) - push to front (left) of list
+rpush list_name values (seperated by space) - push to end (right) of list
+lpop list_name - remove from front (left) of list
+rpop list_name - remove from end (right) of list
+lrange list_name start stop (max stop must be last index of list)
+if you want to print all of list items:
+lrange list_name 0 -1
